@@ -61,10 +61,11 @@ print()
 data_matrix = []
 def evklid( matrix,maxi, data_matrix):
     # print(f"   a   n    N ")
-    for k in maxi.keys():
+    for k in maxi.values():
         # print(f"{k}) {maxi[k]}")
         check = True
-        a, b = maxi[k][-1], maxi[k][-2]
+        a, b = min(k), max(k)
+        print(a, b)
         q, r, x = "-", "-", "-"
         x2, x1 = 1, 0
 
